@@ -1,5 +1,79 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@font-face {
+    font-family: "Coluna";
+    src: url('Coluna.otf');
+}
+
 * { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+.header { 
+    box-sizing: border-box;
+    background-image: url('img/background-index.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.nav-bar { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    font-family: "Coluna", sans-serif;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    padding: 25px;
+}
+
+.nav-bar > a { 
+    color: white;
+}
+
+.nav-bar > a:hover { 
+    transform: scale(1.2);
+}
+
+.titulo-principal { 
+    color: white;
+    text-align: center;
+    font-family: "Coluna", sans-serif ;
+    font-size: 7rem;
+    margin: 85px 0;
+    padding: 50px;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    
+}
+.titulo-style { 
+    font-family: "Coluna", sans-serif ;
+    background-color: red;
+    color: white; 
+    padding: 3px 10px;
+    font-size: 3.5rem; 
+    vertical-align: middle;
+    box-shadow: 1px 1px 10px black;
+}
+
+.slogan {
+    font-family:  'Montserrat', sans-serif; 
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    color: white;
+}
+
+.texto-container { 
+    display: flex;
+    flex-direction: column;
 }
