@@ -1,0 +1,5 @@
+Site para demonstração de doces finos. 
+-NavBar com logo La Casa de Doces
+-Section apresentação de doces 
+-Section história da marca
+-Section contatos + link que redireciona para o whatsapp 
