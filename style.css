@@ -1,5 +1,106 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); 
+/*Fonte Roboto*/
+@font-face {
+    font-family: 'coluna';
+    src: url(fonts/Coluna.otf) format('opentype');
+}
+/*Usar para H1*/
+
 * { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8);
+}
+
+.topo {
+    background-color: yellow;
+    height: 300px;
+    grid-column: 1 / 3;
+}
+
+.produtos-titulo {
+    grid-column: 1 / 3;
+    height: 300px;
+}
+
+.produtos-categoria {
+    background-color: blue;
+    height: 300px;
+    grid-column: 1 / 3;
+}
+
+.produtos-cardapio {
+    background-color: beige;
+    height: 300px;
+    grid-column: 1 / 3;
+}
+
+.historia-titulo {
+    height: 300px;
+    grid-column: 1 / 3;
+}
+
+.historia-imagem {
+    background-color: red;
+    height: 300px;
+}
+
+.historia-descricao {
+    background-color: darkred;
+    height: 300px;
+}
+
+.contato {
+    background-color: black;
+    height: 300px;
+    grid-column: 1 / 3;
+}
+
+.mapa-descricao {
+    background-color: pink;
+    height: 300px;
+}
+
+.mapa {
+    background-color: purple;
+    height: 300px;
+}
+
+.footer {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    background-color: #131313;
+    height: 80px;
+    grid-column: 1 / 3;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.footer a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+@media (max-width: 800px) {
+    .layout {
+        display: flex;
+        flex-direction: column;
+    }
 }
