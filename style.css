@@ -70,23 +70,40 @@ body {
 }
 
 .contato {
-    background-color: black;
-    min-height: 50vh;
+    background-color: #131313;
+    height: min(800px, 70vh);
     padding: 2rem;
     grid-column: 1 / 3;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     color: white;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
 }
 
+input {
+    border: 1px solid #bb2e2b;
+    width: 200px;
+    height: 2rem;
+    padding: 1rem;
+}
+
+textarea {
+    border: 1px solid #bb2e2b;
+    width: 200px;
+    height: 5rem;
+    padding: 1rem;
+}
+
 .botao-contato {
-    padding: 10px 20px;
-    background-color: #bb2e2b;
-    
+    background-color: #bb2e2b; 
+    padding: 10px 20px;   
+}
+
+a.botao-contato {
+    color: white;
 }
 
 .mapa-descricao {
