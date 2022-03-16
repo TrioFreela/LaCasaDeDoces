@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="whatsapp.js" defer></script>
     <title>La Casa de Doces</title>
 
     <!-- Kit font Awesome -->
@@ -22,17 +23,17 @@
         <div class="contato">
             <img src="img/contato-branco.png" class="imagem-titulo">
 
-            <input type="text" name="nome" placeholder="Nome" id="nome">  
-            <input type="email" name="email" placeholder="E-mail" id="email">
-            <input type="tel" name="whatsapp" placeholder="WhatsApp" id="whatsapp">
-            <textarea placeholder="Em quais produtos estão interessados?" id="mensagem"></textarea> 
+            <input type="text" name="nome" placeholder="Nome" id="nome" value="nome">  
+            <input type="email" name="email" placeholder="E-mail" id="email" value="email">
+            <input type="tel" name="whatsapp" placeholder="WhatsApp" id="whatsapp" value="5598981498444">
+            <textarea placeholder="Em quais produtos estão interessados?" id="mensagem">Produtos</textarea> 
 
             <!-- Botões de enviar -->
             <span>
-                <a class="botao-contato"><i class="fa-solid fa-envelope"></i>
+                <a class="botao-contato" id="botao-email"><i class="fa-solid fa-envelope"></i>
                     &nbsp;&nbsp; E-mail</a>
                 &nbsp;&nbsp;
-                <a href="https://api.whatsapp.com/send?phone=5598981498444&text=Ol%C3%A1!%20Estou%20interessado%20em%20encomendar%20doces!" class="botao-contato"><i class="fa-brands fa-whatsapp"></i>
+                <a class="botao-contato" id="botao-whatsapp"><i class="fa-brands fa-whatsapp"></i>
                     &nbsp;&nbsp;
                     WhatsApp</a>
             </span>
