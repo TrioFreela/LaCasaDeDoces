@@ -70,23 +70,66 @@ body {
 }
 
 .contato {
-    background-color: black;
-    min-height: 50vh;
+    background-color: #131313;
+    height: min(900px, 70vh);
     padding: 2rem;
     grid-column: 1 / 3;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     color: white;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
 }
 
+form {
+    display: flex;
+    height: min(800px, 70vh);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+input {
+    border: 1px solid #bb2e2b;
+    width: 100%;
+    height: 2rem;
+    padding: 1rem;
+}
+
+button {
+    background-color: #bb2e2b; 
+    padding: 10px 20px;  
+    cursor: pointer; 
+    border: 0px;
+    height: 40px;
+    color: white;
+    transition:all .5s ease-in-out;
+}
+
+button:hover {
+    background:white;
+    color:#bb2e2b;
+  
+}
+
+textarea {
+    border: 1px solid #bb2e2b;
+    width: 100%;
+    height: 5rem;
+    padding: 1rem;
+}
+
 .botao-contato {
-    padding: 10px 20px;
-    background-color: #bb2e2b;
-    
+    background-color: #bb2e2b; 
+    padding: 10px 20px;  
+    cursor: pointer; 
+    height: 40px;
+}
+
+a.botao-contato {
+    color: white;
 }
 
 .mapa-descricao {
