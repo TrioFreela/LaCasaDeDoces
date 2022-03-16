@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>La Casa de Doces</title>
+
+    <!-- Kit font Awesome -->
+    <script src="https://kit.fontawesome.com/241e2059a9.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="layout">
@@ -16,7 +19,25 @@
         <div class="historia-titulo"></div>
         <div class="historia-imagem"></div>
         <div class="historia-descricao"></div>
-        <div class="contato"></div>
+        <div class="contato">
+            <img src="img/contato-branco.png" class="imagem-titulo">
+
+            <input type="text" name="nome" placeholder="Nome" id="nome">  
+            <input type="email" name="email" placeholder="E-mail" id="email">
+            <input type="tel" name="whatsapp" placeholder="WhatsApp" id="whatsapp">
+            <textarea placeholder="Em quais produtos estão interessados?" id="mensagem"></textarea> 
+
+            <!-- Botões de enviar -->
+            <span>
+                <a class="botao-contato"><i class="fa-solid fa-envelope"></i>
+                    &nbsp;&nbsp; E-mail</a>
+                &nbsp;&nbsp;
+                <a class="botao-contato"><i class="fa-brands fa-whatsapp"></i>
+                    &nbsp;&nbsp;
+                    WhatsApp</a>
+            </span>
+
+        </div>
         <div class="mapa-descricao"></div>
         <div class="mapa"></div>
 
