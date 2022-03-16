@@ -12,6 +12,7 @@ function pegaValores() {
     // Construindo o link
     let link = `https://wa.me/${whatscliente}?text=Olá!%20Meu%20nome%20é%20${nome}%20e%20estou%20interessado(a)%20em%20falar%20com%20você%20sobre%20${mensagem}`;
     
+    window.location.href = `${link}`;
 }
 
 let botaoZap = document.getElementById("botao-whatsapp");

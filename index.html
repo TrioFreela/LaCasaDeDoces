@@ -23,21 +23,30 @@
         <div class="contato">
             <img src="img/contato-branco.png" class="imagem-titulo">
 
+            <!-- FORMULÁRIO -->
+        <FORM>
+            <form action="https://formsubmit.co/amanda.alexandre@outlook.com" method="POST">
             <input type="text" name="nome" placeholder="Nome" id="nome" value="nome">  
             <input type="email" name="email" placeholder="E-mail" id="email" value="email">
             <input type="tel" name="whatsapp" placeholder="WhatsApp" id="whatsapp" value="5598981498444">
-            <textarea placeholder="Em quais produtos estão interessados?" id="mensagem">Produtos</textarea> 
+            <textarea placeholder="Em quais produtos estão interessados?" id="mensagem" name="mensagem">Produtos</textarea> 
 
+            <input type="hidden" name="_subject" value="Nova mensagem">
+            <input type="hidden" name="_next" value="mensagem-enviada.html">
             <!-- Botões de enviar -->
             <span>
-                <a class="botao-contato" id="botao-email"><i class="fa-solid fa-envelope"></i>
-                    &nbsp;&nbsp; E-mail</a>
+                <button type="submit"><i class="fa-solid fa-envelope"></i>
+                    &nbsp;&nbsp; E-mail</button>
+                <!-- <a class="botao-contato" id="botao-email"><i class="fa-solid fa-envelope"></i>
+                    &nbsp;&nbsp; E-mail</a> -->
                 &nbsp;&nbsp;
-                <a class="botao-contato" id="botao-whatsapp"><i class="fa-brands fa-whatsapp"></i>
+                <button class="botao-contato" id="botao-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
                     &nbsp;&nbsp;
-                    WhatsApp</a>
+                    WhatsApp
+                </button>
             </span>
-
+        </FORM>
         </div>
         <div class="mapa-descricao"></div>
         <div class="mapa"></div>
