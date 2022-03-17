@@ -180,4 +180,8 @@ a.botao-contato {
         display: flex;
         flex-direction: column;
     }
+
+    .mapa-descricao { 
+        height: min(270px, 60vh);
+    }
 }
