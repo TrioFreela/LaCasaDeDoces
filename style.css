@@ -143,6 +143,11 @@ a.botao-contato {
 
 }
 
+.endereco{
+    margin-right: 97px; 
+
+}
+
 .mapa {
     background-color: #F5EFD4;
     display: flex;
