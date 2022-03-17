@@ -133,13 +133,23 @@ a.botao-contato {
 }
 
 .mapa-descricao {
-    background-color: pink;
-    height: 300px;
+    background-color: pink;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#F5EFD4;
+    height: min(900px, 60vh);
+    padding: 30px;
+
 }
 
 .mapa {
-    background-color: purple;
-    height: 300px;
+    background-color: #F5EFD4;
+    display: flex;
+    height: min(900px, 60vh);
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
