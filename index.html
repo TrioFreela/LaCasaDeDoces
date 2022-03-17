@@ -26,13 +26,15 @@
             <!-- FORMULÁRIO -->
         <FORM>
             <form action="https://formsubmit.co/amandikaloka@gmail.com" method="POST">
-            <input type="text" name="nome" placeholder="Nome" id="nome" value="nome">  
-            <input type="email" name="email" placeholder="E-mail" id="email" value="email">
-            <input type="tel" name="whatsapp" placeholder="WhatsApp" id="whatsapp" value="5598981498444">
-            <textarea placeholder="Em quais produtos estão interessados?" id="mensagem" name="mensagem">Produtos</textarea> 
-
             <input type="hidden" name="_subject" value="Nova mensagem">
-            <input type="hidden" name="_next" value="https://triofreela.github.io/LaCasaDeDoces/mensagem-enviada.html">
+            <input type="hidden" name="_next" value="https://triofreela.github.io/LaCasaDeDoces/obrigado.html">
+
+            <input type="text" name="nome" placeholder="Nome" id="nome" value="nome" required>  
+            <input type="email" name="email" placeholder="E-mail" id="email" value="email" required>
+            <input type="tel" name="whatsapp" placeholder="WhatsApp" id="whatsapp" value="5598981498444">
+            <textarea placeholder="Em quais produtos estão interessados?" id="mensagem" name="mensagem" required>Produtos</textarea> 
+
+            
             <!-- Botões de enviar -->
             <span>
                 <button type="submit"><i class="fa-solid fa-envelope"></i>
