@@ -1,21 +1,35 @@
-const links = ["link1.html", "link2.html", "link3.html"]
-
-var corpoDoTexto = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",  "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",  "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."]
-
-var foto = document.querySelector(".foto-celular");
-const descricao = document.querySelector(".foto-descricao");
+const links = ["bombom.html", "brigadeiro.html", "tortinha.html"]
+$('#produto0').hide();
 
 function mudaLink(i){
-    foto.innerHTML = `<img src="img/${i}.jpg">`;
-    descricao.innerHTML = `<h3>Link ${i+1} </h3>
+    var foto = document.querySelector(".foto-produto");
+    const descricao = document.querySelector(".foto-descricao");
+    foto.innerHTML = "<div id="produto{i}">";
     <br>
     <br>
-    ${corpoDoTexto[i]}
+    descricao.innerHTML = "<div id="cardapio{i}">";
     <br><br>
-
-    <a hfer="${links[i]}" class="link-botao-cinza">Mais</a>`
-   
+  
 
 }
 
 mudaLink(0);
+{/* 
+$(document).ready(function (event) {
+    $('#erro').hide();
+    $('#email').blur(function (event) {
+        var _email = $('.infobox').val();
+        if (validar_email(_email)) {
+            $('#erro').hide();
+            $('.enviar').click(function(){
+                alert("Enviado com sucesso!")
+                event.preventDefault();
+                
+            })
+        }
+        else {
+            $('#erro').show();
+           
+        }
+        
+    }); */}

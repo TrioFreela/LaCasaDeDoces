@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="lacasadedoces.js"></script>
+    <script src="lacasadedoces.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/a6e1ffb038.js"></script>
 
@@ -37,36 +38,62 @@
         </div>
 
         <div class="produtos-titulo">
-            <img src="img/produtos-preto.png" alt="Produtos" class="imagem-titulo">
+            <img src="img/produtos-preto.png" alt="Produtos" class="imagem-titulo" id="produtos">
             
             
         </div>
 
         <div class="produtos-categoria">
             <div id="categoria-produto">
-                <span><img src="img/bombom.png" alt="bombom" class="imgprodutos"><br>Bombom</span>
-                <span><img src="img/brigadeiro.png" alt="brigadeiro" class="imgprodutos"><br>Brigadeiro</span>
-                <span><img src="img/produtos/torta-limao.jpg" alt="tortinhas" class="imgprodutos"><br>Tortinha</span>
+                <span><img src="img/bombom.png" alt="bombom" class="imgprodutos"><br><a onclick="mudaLink(0)">Bombom</span></a>
+
+                <span><img src="img/brigadeiro.png" alt="brigadeiro" class="imgprodutos"><br><a onclick="mudaLink(1)">Brigadeiro</span></a>
+
+                <span><img src="img/produtos/torta-limao.jpg" alt="tortinhas" class="imgprodutos"><br><a onclick="mudaLink(2)">Tortinha</span></a>
 
             </div>
         </div>
 
-        <div class="produtos-cardapio">
-            <div class="portifolio" id="portifolio">
-               
-                <div class="tabela-de-links">
-                    <a onclick="mudaLink(0)"> Link1</a>
-                    <a onclick="mudaLink(1)"> Link2</a>
-                    <a onclick="mudaLink(2)">Link3</a>
+        <div class="produtos-cardapio">            
+           
+            <div class="foto-produto">
+            <div id="produto0">
+                <img src="img/bombom.png" alt=""><img src="img/bombons.jpeg" alt=""><img src="img/bombons2.jpeg" alt=""><img src="img/bombom.png" alt="">
+
+            </div>
+            <div id="produto1">
+                <img src="img/brigadeiro-quadrado.jpg" alt="brigadeiro quadrado">
+                <img src="img/brigadeiro.png" alt="brigadeiro">
+                <img src="img/78f828a3-66b6-45c0-bfd1-d0b9eafe50f6.jpeg" alt="brigadeiros">
+                <img src="img/produtos/brigadeiro-sortido.png" alt="brigaeiro sortido">
+
+            </div>
+            <div id="produto2">
+                <img src="img/torta-topo.png" alt=""><img src="img/tortinhas.jpeg" alt=""><img src="img/produtos/torta-limao.jpg" alt=""><img src="img/produtos/torta-maracujá.jpg" alt="">
+
+            </div>  
+            </div>
+
+            <div class="foto-descricao">
+                <div id="cardapio0">
+                    <p>...............delicioso bombom de chocolate preto com confeitos coloridos</p>
+                    <p>...............delicioso bombom de chocolate branco com confeitos coloridos</p>
+                    <p>...............delicioso bombom de ninho com nutella</p>
+                    <p>...............delicioso bombom de chocolate preto e branco com confeitos pretos</p>
+                </div>
+                <div id="cardapio1">
+                    <p>...............delicioso brigadeiro de chocolate preto com confeitos coloridos</p>
+                    <p>...............delicioso brigadeiro de chocolate branco com confeitos coloridos</p>
+                    <p>...............delicioso brigadeiro de ninho com nutella</p>
+                    <p>...............delicioso brigadeiro de chocolate preto e branco com confeitos pretos</p>
                     
                 </div>
-            </div>
-        
-            <div class="foto-celular">
-                
-            </div>
-            <div class="foto-descricao">
-                
+                <div id="cardapio2">
+                    <p>...............deliciosa tortinha de chocolate preto </p>
+                    <p>...............deliciosa tortinha de morango</p>
+                    <p>...............deliciosa tortinha de limão</p>
+                    <p>...............deliciosa tortinha de maracujá</p>
+                </div>
         
                 
             </div>

@@ -153,8 +153,12 @@ span{
 
 .produtos-cardapio {
     background-color: beige;
-    height: 300px;
+    height: 500px;
     grid-column: 1 / 3;
+}
+
+.produtos-cardapio img{
+    width: 80px;
 }
 
 .historia-titulo {
