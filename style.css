@@ -73,17 +73,16 @@ nav{
     width: 100%;
     z-index: 3;
     justify-content: space-between;
-    align-items: center
-
-    
+    align-items: center    
 }
+
 #menu{
     display: flex;
     flex-direction: row;
-    padding: 5px;
+    padding-right: 35px;
     flex-wrap: wrap;
-    
 }
+
 #menu a{
     color: white;
     text-decoration: none;
@@ -142,6 +141,10 @@ nav{
     flex-direction: row;
     justify-content: space-around;
     
+}
+
+.foto-descricao {
+    display: none;
 }
 
 span{
