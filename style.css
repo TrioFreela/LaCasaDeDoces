@@ -73,16 +73,16 @@ nav{
     width: 100%;
     z-index: 3;
     justify-content: space-between;
-    align-items: center
-
-    
+    align-items: center    
 }
+
 #menu{
     display: flex;
     flex-direction: row;
     padding-right: 35px;
     flex-wrap: wrap;
 }
+
 #menu a{
     color: white;
     text-decoration: none;
