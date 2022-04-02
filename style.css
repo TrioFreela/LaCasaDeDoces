@@ -80,9 +80,8 @@ nav{
 #menu{
     display: flex;
     flex-direction: row;
-    padding: 5px;
+    padding-right: 35px;
     flex-wrap: wrap;
-    
 }
 #menu a{
     color: white;
