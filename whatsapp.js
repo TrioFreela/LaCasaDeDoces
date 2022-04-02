@@ -18,7 +18,3 @@ function pegaValores() {
 let botaoZap = document.getElementById("botao-whatsapp");
 
 botaoZap.addEventListener("click", pegaValores);
-
-// Construir o link
-
-// Redirecionar para o whatsapp
