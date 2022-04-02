@@ -99,7 +99,7 @@ nav{
 }
 
 #logo{
-    width: 150px;    
+    width: clamp(150px, 30%, 300px);    
     display: flex;
     padding: 5px; 
     margin: 10px; 
