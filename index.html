@@ -45,12 +45,12 @@
 
         <div class="produtos-categoria">
             <div id="categoria-produto">
-                <span><img src="img/menu-bombom.png" alt="bombom" class="imgprodutos" id="menu-bombom"><br>
+                <span><img src="img/menu-bombom.png" alt="bombom" class="imgprodutos" id="menu-bombom" onclick="mudaLink(0)"><br>
                     Bombom</span></a>
 
-                <span><img src="img/menu-brigadeiro.png" alt="brigadeiro" class="imgprodutos" id="menu-brigadeiro"><br>Brigadeiro</span>
+                <span><img src="img/menu-brigadeiro.png" alt="brigadeiro" class="imgprodutos" id="menu-brigadeiro" onclick="mudaLink(1)"><br>Brigadeiro</span>
 
-                <span><img src="img/menu-tortinha.png" alt="tortinhas" class="imgprodutos" id="menu-tortinha"><br>Tortinha</span>
+                <span><img src="img/menu-tortinha.png" alt="tortinhas" class="imgprodutos" id="menu-tortinha" onclick="mudaLink(2)"><br>Tortinha</span>
 
             </div>
         </div>
@@ -112,10 +112,10 @@
         <FORM>
             <form action="https://formspree.io/f/mwkyqzgb" method="POST">
             <input type="hidden" name="subject" value="Mensagem do site">
-            <input type="text" name="nome" placeholder="Nome" id="nome" value="nome" required>  
-            <input type="email" name="email" placeholder="E-mail" id="email" value="email" required>
-            <input type="tel" name="whatsapp" placeholder="WhatsApp" id="whatsapp" value="5598981498444">
-            <textarea placeholder="Em quais produtos estão interessados?" id="mensagem" name="mensagem" required>Produtos</textarea> 
+            <input type="text" name="nome" placeholder="Nome" id="nome" required>  
+            <input type="email" name="email" placeholder="E-mail" id="email" required>
+            <input type="tel" name="whatsapp" placeholder="WhatsApp" id="whatsapp">
+            <textarea placeholder="Em quais produtos estão interessados?" id="mensagem" name="mensagem" required></textarea> 
 
             
             <!-- Botões de enviar -->
