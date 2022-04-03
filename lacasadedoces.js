@@ -1,8 +1,11 @@
 const links = ["bombom.html", "brigadeiro.html", "tortinha.html"]
-$('#produto0').hide();
+
+document.querySelector('#produto0').hide();
+document.querySelector('#produto1').hide();
+document.querySelector('#produto2').hide();
 
 function mudaLink(i){
-    var foto = document.querySelector(".foto-produto");
+    var section = document.querySelector(".foto-produto");
     const descricao = document.querySelector(".foto-descricao");
     foto.innerHTML = "<div id="produto{i}">";
     <br>
@@ -14,6 +17,7 @@ function mudaLink(i){
 }
 
 mudaLink(0);
+
 {/* 
 $(document).ready(function (event) {
     $('#erro').hide();
